@@ -29,7 +29,7 @@ SET time_zone = "+00:00";
 CREATE TABLE IF NOT EXISTS `brands` (
 `brand_id` int(11) NOT NULL,
   `name` varchar(100) COLLATE utf8_unicode_ci NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Схема на данните от таблица `brands`
@@ -52,7 +52,7 @@ CREATE TABLE IF NOT EXISTS `cars` (
   `year` int(4) NOT NULL,
   `brand_id` int(11) NOT NULL,
   `region_id` int(11) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Схема на данните от таблица `cars`
@@ -73,7 +73,7 @@ CREATE TABLE IF NOT EXISTS `regions` (
 `region_id` int(11) NOT NULL,
   `name` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
   `country` varchar(100) COLLATE utf8_unicode_ci NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Схема на данните от таблица `regions`
@@ -114,17 +114,17 @@ ALTER TABLE `regions`
 -- AUTO_INCREMENT for table `brands`
 --
 ALTER TABLE `brands`
-MODIFY `brand_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+MODIFY `brand_id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `cars`
 --
 ALTER TABLE `cars`
-MODIFY `car_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+MODIFY `car_id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `regions`
 --
 ALTER TABLE `regions`
-MODIFY `region_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+MODIFY `region_id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- Ограничения за дъмпнати таблици
 --
